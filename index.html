@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Connect - 大学生交流イベント</title>
+    <meta name="description" content="未来をつくる仲間と出会おう。NextGen Connectは、全学年の大学生を対象としたキャリアと交流のイベントです。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">NextGen Connect</h1>
+            <nav class="nav">
+                <a href="#about">イベントについて</a>
+                <a href="#register" class="btn btn-primary small">参加登録</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h2 class="hero-title">未来をつくる<br>仲間と出会おう。</h2>
+                <p class="hero-subtitle">大学・学部の垣根を超えて、新しい可能性を見つける1日。<br>インスピレーションと出会いがあなたを待っています。</p>
+                <a href="#register" class="btn btn-primary large">今すぐ申し込む</a>
+            </div>
+            <div class="hero-background">
+                <!-- 装飾的な背景要素 -->
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h3 class="section-title">Why Join Us?</h3>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="icon">🤝</div>
+                        <h4>多様な交流</h4>
+                        <p>様々なバックグラウンドを持つ学生と交流し、視野を広げることができます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🚀</div>
+                        <h4>キャリア形成</h4>
+                        <p>OB・OGや企業担当者との接点もあり、将来のキャリアを考えるきっかけに。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💡</div>
+                        <h4>アイデアの共創</h4>
+                        <p>ワークショップを通じて、新しいアイデアを形にするプロセスを体験できます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="register">
+            <div class="container">
+                <h3 class="section-title">参加登録</h3>
+                <p class="form-description">以下のフォームに必要な情報を入力してください。</p>
+                
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <label for="name">氏名 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="例: 山田 太郎" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="university">大学名 <span class="required">*</span></label>
+                        <input type="text" id="university" name="university" placeholder="例: ○○大学" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">学部・学科 <span class="required">*</span></label>
+                        <input type="text" id="department" name="department" placeholder="例: 工学部 情報工学科" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grade">学年 <span class="required">*</span></label>
+                        <select id="grade" name="grade" required>
+                            <option value="">選択してください</option>
+                            <option value="1年">学部 1年</option>
+                            <option value="2年">学部 2年</option>
+                            <option value="3年">学部 3年</option>
+                            <option value="4年">学部 4年</option>
+                            <option value="修士">修士課程</option>
+                            <option value="博士">博士課程</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="例: taro.yamada@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>興味のあるトピック (複数可)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="キャリア全般"> キャリア全般</label>
+                            <label><input type="checkbox" name="interests" value="IT・エンジニアリング"> IT・エンジニアリング</label>
+                            <label><input type="checkbox" name="interests" value="起業・スタートアップ"> 起業・スタートアップ</label>
+                            <label><input type="checkbox" name="interests" value="デザイン・クリエイティブ"> デザイン・クリエイティブ</label>
+                            <label><input type="checkbox" name="interests" value="マーケティング"> マーケティング</label>
+                            <label><input type="checkbox" name="interests" value="国際交流"> 国際交流</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">ひとこと (任意)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="自己紹介やイベントへの期待など"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary large full-width">登録確認</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 NextGen Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="confirmationModal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1" data-close-modal></div>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" aria-label="閉じる" data-close-modal>&times;</button>
+            <h3 id="modalTitle" class="modal-title">登録内容の確認</h3>
+            <div class="modal-body">
+                <dl class="confirmation-list">
+                    <div class="confirmation-item">
+                        <dt>氏名</dt>
+                        <dd id="confirm-name"></dd>
+                    </div>
+                    <div class="confirmation-item">
+                        <dt>大学名</dt>
+                        <dd id="confirm-university"></dd>
+                    </div>
+                    <div class="confirmation-item">
+                        <dt>学部・学科</dt>
+                        <dd id="confirm-department"></dd>
+                    </div>
+                    <div class="confirmation-item">
+                        <dt>学年</dt>
+                        <dd id="confirm-grade"></dd>
+                    </div>
+                    <div class="confirmation-item">
+                        <dt>メールアドレス</dt>
+                        <dd id="confirm-email"></dd>
+                    </div>
+                    <div class="confirmation-item">
+                        <dt>興味のあるトピック</dt>
+                        <dd id="confirm-interests"></dd>
+                    </div>
+                    <div class="confirmation-item">
+                        <dt>ひとこと</dt>
+                        <dd id="confirm-message"></dd>
+                    </div>
+                </dl>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" data-close-modal>修正する</button>
+                    <button type="button" class="btn btn-primary" id="finalSubmitBtn">送信する</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
