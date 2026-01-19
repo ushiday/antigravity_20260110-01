@@ -1,0 +1,25 @@
+# editorconfig.org
+root = true
+
+[*]
+# 文字コードと改行コードの統一
+charset = utf-8
+end_of_line = lf
+
+# インデント設定（基本はスペース2）
+indent_style = space
+indent_size = 2
+
+# ファイル末尾に必ず空行を入れる（Gitなどの差分管理で推奨）
+insert_final_newline = true
+
+# 行末の不要な空白を削除する
+trim_trailing_whitespace = true
+
+[*.js]
+# 前回の質問にあった引用符のルールを強制（シングルクォート）
+quote_type = single
+
+[*.md]
+# Markdownは行末の空白が意味を持つことがあるため、例外として削除しない
+trim_trailing_whitespace = false

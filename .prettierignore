@@ -1,0 +1,14 @@
+# ライブラリ本体（絶対に整形してはいけない）
+node_modules/
+
+# 自動生成される管理ファイル（システムに任せる）
+package.json
+package-lock.json
+yarn.lock
+
+# ビルド成果物
+.nuxt/
+dist/
+
+# その他、自動整形が不要なもの
+.eslintcache
